@@ -1,0 +1,9 @@
+==========================================================
+ REPO INITIALIZATION (MEMBER 1 OR ANY LEAD)
+==========================================================
+1. Create a private GitHub repository named "ridelink".
+2. Invite the other 3 members as Collaborators.
+3. Push these shared files (pom.xml, .gitignore, README.md, .github/, scripts, docs/)
+   to main and develop branches first before members push their feature branches.
+4. The "docs/" folder contains the completed Word Report:
+   IT3130_GroupXX_RideLink_Technical_Report.docx
