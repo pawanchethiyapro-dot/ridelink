@@ -28,5 +28,10 @@ jobs:
 
       - name: Build and Test ${{ matrix.service }}
         run: |
-          cd ${{ matrix.service }}
-          mvn clean test
+          if [ -d "${{ matrix.service }}" ]; then
+            echo "Testing ${{ matrix.service }}..."
+            cd ${{ matrix.service }}
+            mvn clean test
+          else
+            echo "Directory ${{ matrix.service }} does not exist yet (waiting for member contribution). Skipping."
+          fi
