@@ -1,0 +1,41 @@
+package com.ridelink.account.dto;
+
+import com.ridelink.account.entity.AccountStatus;
+import com.ridelink.account.entity.Role;
+
+public class AuthResponse {
+    private String token;
+    private Long id;
+    private String email;
+    private String fullName;
+    private Role role;
+    private AccountStatus status;
+
+    public AuthResponse() {}
+    public AuthResponse(String token, Long id, String email, String fullName, Role role, AccountStatus status) {
+        this.token = token;
+        this.id = id;
+        this.email = email;
+        this.fullName = fullName;
+        this.role = role;
+        this.status = status;
+    }
+
+    public String getToken() { return token; }
+    public void setToken(String token) { this.token = token; }
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+
+    public String getFullName() { return fullName; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+
+    public Role getRole() { return role; }
+    public void setRole(Role role) { this.role = role; }
+
+    public AccountStatus getStatus() { return status; }
+    public void setStatus(AccountStatus status) { this.status = status; }
+}
